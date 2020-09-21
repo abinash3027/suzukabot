@@ -1,0 +1,16 @@
+suzukabot/config.py
+suzukabot/*.session
+suzukabot/*.session-journal
+suzukabot/config.ini
+*.pyc
+.idea/
+.project
+.pydevproject
+.directory
+.vscode
+suzukabot/modules/helper_funcs/temp.txt
+suzukabot/elevated_users.json
+start-3.6.bat
+*.session
+kangsticker.png
+venv
