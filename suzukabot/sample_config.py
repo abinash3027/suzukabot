@@ -21,7 +21,7 @@ class Config(object):
     SQLALCHEMY_DATABASE_URI = 'sqldbtype://username:pw@hostname:port/db_name'  # needed for any database modules
     MESSAGE_DUMP = None  # needed to make sure 'save from' messages persist
     GBAN_LOGS = None #Channel ID here with the hyphen like -123456789
-    LOAD = []
+    LOAD = ['math']
     NO_LOAD = ['translation', 'rss', 'cleaner', 'feds']   
     WEBHOOK = False
     URL = None
