@@ -19,9 +19,9 @@ from suzukabot.modules.helper_funcs.misc import paginate_modules
 PM_START_TEXT = """
 Hi {}, my name is {}! 
 I am a group management bot.
-You can find my list of available commands with /help.
 
-[Suzuka's Repo](github.com/abinash3027/suzukabot)
+To add me to your group click ["HERE"](t.me/suzuka_bot?startgroup=botstart)
+You can find my list of available commands with /help.
 
 The support group chat is at {}.
 """
@@ -138,11 +138,7 @@ def start(bot: Bot, update: Update, args: List[str]):
             first_name = update.effective_user.first_name
             update.effective_message.reply_text(
                 PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), SUPPORT_CHAT),
-                parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True,reply_markup=InlineKeyboardMarkup([[
-                    InlineKeyboardButton(
-                        text="Add Suzuka to your group",
-                        url="t.me/{}?startgroup=true".format(
-                            context.bot.username))]]))
+                parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True)
     else:
         update.effective_message.reply_text("Yo, whadup?")
 
