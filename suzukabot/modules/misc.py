@@ -118,7 +118,7 @@ def info(bot: Bot, update: Update, args: List[str]):
     if user.username:
         text += f"\nUsername: @{html.escape(user.username)}"
 
-    text += f"\nPermanent user link: {mention_html(user.id, 'link')}"
+    text += f"\nPermanent user link: {mention_html(user.id, 'link')}\n"
 
     disaster_level_present = False
 
