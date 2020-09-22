@@ -21,6 +21,7 @@ Hi {}, my name is {}!
 I am a group management bot.
 
 To add me to your group click ["HERE"](t.me/suzuka_bot?startgroup=botstart)
+
 You can find my list of available commands with /help.
 
 The support group chat is at {}.
