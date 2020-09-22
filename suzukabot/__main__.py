@@ -19,10 +19,10 @@ from suzukabot.modules.helper_funcs.misc import paginate_modules
 PM_START_TEXT = """
 Hi {}, my name is {}! 
 I am a group management bot.
-To enable AI and chat with me /addchat
-
+To enable AI in your group and chat with me use: /addchat
+===========
 To add me to your group click ["HERE"](t.me/suzuka_bot?startgroup=botstart)
-
+===========
 You can find my list of available commands with /help.
 
 The support group chat is at {}.
